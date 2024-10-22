@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
-}
+/* General container styling */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Header container */
+.app-header {
+  background-color: #007bff;
   color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  border-bottom: 4px solid #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+/* Title styling */
+.app-header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Subtitle or description styling (optional) */
+.app-header p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #dfeaff;
+}
+
+.lane-container-wrapper {
+  margin: 20px;
+  padding: 15px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lane-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Input styling */
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 10px;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Lane items styling */
+.subreddit-lane {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.subreddit-lane h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.subreddit-lane button {
+  background-color: #e74c3c;
+  margin-top: 10px;
+}
+/* Subreddit name styling */
+.subreddit-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #007bff; /* Reddit's signature orange color */
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+  text-transform: capitalize; /* Capitalizes first letter */
 }
